@@ -11,6 +11,7 @@ class Triangle
 		if (side_a + side_b) <= side_c || (side_a + side_c) <= side_b || (side_b + side_c) <= side_a || (side_a * side_b * side_c) == 0
 			begin
 					raise TriangleError
+            puts message
 			end
 		elsif side_a == side_b && side_b == side_c
     	:equilateral
