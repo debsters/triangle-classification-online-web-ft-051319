@@ -5,7 +5,7 @@ class Triangle
 		@side_a = side_a
 		@side_b = side_b
 		@side_c = side_c
-	end 
+	end
 
 	def kind
 		if (side_a + side_b) <= side_c || (side_a + side_c) <= side_b || (side_b + side_c) <= side_a || (side_a * side_b * side_c) == 0
@@ -24,9 +24,9 @@ class Triangle
 	end
 
 	class TriangleError < StandardError
-		def message 
+		def message
     	"This is not a triangle!"
   	end
   end
-	
+
 end	
